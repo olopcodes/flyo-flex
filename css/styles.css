@@ -1,0 +1,174 @@
+.heading,
+nav a,
+input,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+.heading,
+nav a {
+  color: hsl(243deg, 87%, 12%);
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 0.85rem;
+  letter-spacing: 0.25px;
+}
+
+.heading {
+  font-weight: 700;
+  line-height: 1.25;
+}
+.heading--main {
+  font-size: 1.5rem;
+}
+.heading--secondary {
+  font-size: 1.25rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1em;
+  font-weight: 700;
+  border: 1px solid;
+}
+.btn--cta {
+  background-color: hsl(224deg, 93%, 58%);
+  color: white;
+  border-radius: 5px;
+  border-color: hsl(224deg, 93%, 58%);
+}
+.btn--cta:focus, .btn--cta:hover, .btn--cta:active {
+  background-color: hsl(243deg, 87%, 12%);
+  border-color: hsl(243deg, 87%, 12%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(238deg, 22%, 44%);
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+  color: hsl(243deg, 87%, 12%);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  padding: 4em 0;
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 86.25rem;
+  margin: 0 auto;
+}
+
+.flex-row-center, .flex-col-center,
+.flex-col,
+.flex {
+  display: flex;
+}
+
+.flex-col-center,
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  padding: 1rem 0;
+}
+.header__logo-box {
+  width: 5rem;
+  margin-right: auto;
+}
+.header__nav-list {
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.header__nav-list-item a {
+  text-transform: capitalize;
+}
+.header__nav-list-item a:focus, .header__nav-list-item a:hover, .header__nav-list-item a:active {
+  text-decoration: underline;
+  color: hsl(238deg, 22%, 44%);
+}
+
+.hero__content {
+  order: 2;
+  padding: 1em;
+  text-align: center;
+}
+.hero input,
+.hero button {
+  width: 100%;
+}
+.hero input {
+  padding: 1em;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 1em;
+  border: 1.5px solid hsl(243deg, 87%, 12%);
+}
+
+.productive {
+  margin-top: 5em;
+  background: hsl(240deg, 75%, 98%);
+  position: relative;
+}
+.productive__bg-img {
+  background-image: url("../images/bg-curve-mobile.svg");
+  height: 10rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=styles.css.map */
