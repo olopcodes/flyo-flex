@@ -19,6 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -68,7 +75,7 @@
 
     <section class="productive">
       <div class="productive__bg-img"></div>
-      <div class="container">
+      <div class="container flex-col-center">
         <div class="productive__content">
           <h2 class="heading heading--secondary">
             Stay productive, wherever you are
@@ -85,13 +92,13 @@
           </p>
 
           <a href="#" class="btn btn--outline">
-            see how flyo works
-            <span class="btn-img"
-              ><img src="./images/icon-arrow.svg" alt=""
+            <span class="flex flex-row-center">
+              see how flyo works
+              <img class="btn-img" src="./images/icon-arrow.svg" alt=""
             /></span>
           </a>
 
-          <blockquote class="productive__quote">
+          <blockquote class="productive__quote flex-col">
             <span class="productive__img-quote"
               ><img src="./images/icon-quotes.svg" alt=""
             /></span>
@@ -100,16 +107,18 @@
               Since making the switch our team has become a well-oiled
               collaboration machine.
             </figcaption>
-            <span class="productive__profile-img">
-              <img
-                src="./images/avatar-testimonial.jpg"
-                alt="kyle burton founder & ceo of huddle"
-              />
-            </span>
-            <cite>
-              <p>Kyle Burton</p>
-              <p>Founder & CEO, Huddle</p>
-            </cite>
+            <div class="productive__citation flex">
+              <span>
+                <img
+                  src="./images/avatar-testimonial.jpg"
+                  alt="kyle burton founder & ceo of huddle"
+                />
+              </span>
+              <cite>
+                <p>Kyle Burton</p>
+                <p>Founder & CEO, Huddle</p>
+              </cite>
+            </div>
           </blockquote>
         </div>
 
@@ -118,19 +127,82 @@
         </div>
       </div>
     </section>
-    See how Fylo works Kyle Burton Founder & CEO, Huddle Get early access today
-    It only takes a minute to sign up and our free starter tier is extremely
-    generous. If you have any questions, our support team would be happy to help
-    you. Get Started For Free Phone: +1-543-123-4567 example@fylo.com About Us
-    Jobs Press Blog Contact Us Terms Privacy
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+    <section class="subscribe">
+      <div class="container flex-col-center">
+        <h2 class="heading heading--secondary">Get early access today</h2>
+        <p>
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+        <form class="subscribe__form">
+          <input
+            required
+            type="email"
+            name="sub-email"
+            id="sub-email"
+            placeholder="Enter your email"
+          />
+          <button class="btn btn--cta">Get Started For Free</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__company">
+          <div class="footer__logo-box">
+            <p class="heading">FLYO</p>
+            <p class="desc">Improving productivity on the fly.</p>
+          </div>
+          <div class="footer__contact">
+            <p>
+              <span
+                ><img src="./images/icon-phone.svg" alt="a phone to call flyo"
+              /></span>
+              1 (800) 555 - 1234
+            </p>
+
+            <p>
+              <span
+                ><img src="./images/icon-email.svg" alt="email to contact flyo"
+              /></span>
+              contactus@flyo.com
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <ul class="footer__list">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <ul class="footer__list">
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">terms</a></li>
+              <li><a href="#">privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__socials">
+            <ul class="footer__socials-list">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
