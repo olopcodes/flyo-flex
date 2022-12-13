@@ -256,6 +256,14 @@ form input {
 
 .footer {
   background-color: hsl(243deg, 87%, 12%);
+  color: hsl(0deg, 0%, 75%);
+  font-size: 0.85rem;
+}
+.footer a {
+  color: hsl(0deg, 0%, 75%);
+}
+.footer a:focus, .footer a:hover, .footer a:active {
+  color: white;
 }
 .footer__logo-box .heading,
 .footer__logo-box .desc {
@@ -265,8 +273,24 @@ form input {
   font-size: 3rem;
   color: white;
 }
-.footer__logo-box .desc {
-  color: hsl(238deg, 22%, 44%);
+.footer__contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+.footer__contact span img {
+  width: 1rem;
+}
+.footer__list {
+  margin-bottom: 2em;
+}
+.footer__list li {
+  text-transform: capitalize;
+}
+.footer__socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
