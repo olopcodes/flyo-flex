@@ -73,6 +73,16 @@ html {
   box-sizing: border-box;
   font-size: 100%;
 }
+@media only screen and (min-width: 37.5em) {
+  html {
+    font-size: 105%;
+  }
+}
+@media only screen and (min-width: 60em) {
+  html {
+    font-size: 110%;
+  }
+}
 
 *,
 *::after,
@@ -133,6 +143,11 @@ form input {
   max-width: 86.25rem;
   margin: 0 auto;
 }
+@media only screen and (min-width: 37.5em) {
+  .container {
+    padding: 0 3em;
+  }
+}
 
 .flex-row-center, .flex-col-center,
 .flex-col,
@@ -155,6 +170,18 @@ form input {
   justify-content: center;
 }
 
+@media only screen and (min-width: 60em) {
+  .desktop-align-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .desktop-align-flex > * {
+    flex-basis: 50%;
+  }
+}
+
 .header {
   padding: 1rem 0;
 }
@@ -166,6 +193,11 @@ form input {
   gap: 0.5rem;
   justify-content: flex-end;
 }
+@media only screen and (min-width: 37.5em) {
+  .header__nav-list {
+    gap: 1.5rem;
+  }
+}
 .header__nav-list-item a {
   text-transform: capitalize;
 }
@@ -174,10 +206,44 @@ form input {
   color: hsl(238deg, 22%, 44%);
 }
 
+@media only screen and (min-width: 60em) {
+  .hero .container {
+    flex-direction: row-reverse;
+  }
+}
 .hero__content {
   order: 2;
   padding: 1em;
   text-align: center;
+}
+@media only screen and (min-width: 37.5em) {
+  .hero__content {
+    padding: 3em;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .hero__content {
+    padding-bottom: 6em;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .hero__form {
+    display: flex;
+  }
+  .hero__form input {
+    margin: 0;
+    border-right: none;
+    flex-basis: 70%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .hero__form button {
+    border-left: none;
+    flex-basis: 30%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 .productive {
@@ -192,16 +258,34 @@ form input {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -3rem;
+  top: -4.5rem;
   left: 0;
   width: 100%;
   z-index: -1;
+}
+@media only screen and (min-width: 37.5em) {
+  .productive__bg-img {
+    background-image: url("../images/bg-curve-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .productive__content {
   order: 2;
   margin-top: 2em;
   padding: 2em 0;
   text-align: center;
+}
+@media only screen and (min-width: 37.5em) {
+  .productive__content {
+    padding: 2em 3em;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .productive__content {
+    text-align: left;
+  }
 }
 .productive__content p {
   text-align: left;
@@ -244,6 +328,11 @@ form input {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
+@media only screen and (min-width: 60em) {
+  .productive__img-box {
+    order: 4 !important;
+  }
+}
 
 .subscribe {
   background-color: hsl(238deg, 22%, 44%);
@@ -253,11 +342,29 @@ form input {
 .subscribe .heading {
   color: white !important;
 }
+@media only screen and (min-width: 37.5em) {
+  .subscribe .container {
+    padding: 0 3em;
+    max-width: 50em;
+  }
+}
+.subscribe p {
+  margin: 0 0 2em 0;
+}
 
 .footer {
   background-color: hsl(243deg, 87%, 12%);
   color: hsl(0deg, 0%, 75%);
   font-size: 0.85rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .footer .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3%;
+  }
 }
 .footer a {
   color: hsl(0deg, 0%, 75%);
@@ -281,16 +388,44 @@ form input {
 .footer__contact span img {
   width: 1rem;
 }
+@media only screen and (min-width: 37.5em) {
+  .footer__contact {
+    flex-basis: 33%;
+  }
+}
 .footer__list {
   margin-bottom: 2em;
 }
+@media only screen and (min-width: 37.5em) {
+  .footer__list {
+    flex-basis: 30%;
+    margin: 0;
+  }
+}
 .footer__list li {
   text-transform: capitalize;
+}
+@media only screen and (min-width: 37.5em) {
+  .footer__socials {
+    margin-top: 2em;
+    flex-basis: 100%;
+  }
 }
 .footer__socials-list {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+}
+.footer__socials-list a {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid;
+  font-size: 0.75rem;
+}
+.footer__socials-list a:focus, .footer__socials-list a:hover, .footer__socials-list a:active {
+  border-color: hsl(243deg, 87%, 12%);
+  background-color: hsl(243deg, 87%, 12%);
 }
 
 /*# sourceMappingURL=styles.css.map */
